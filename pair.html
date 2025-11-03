@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝐐𝐔𝐄𝐄𝐍-𝐑𝐀𝐒𝐇𝐔-𝐌𝐃 PAIR CODE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000; 
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle 3s linear infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.8; transform: translateY(0); }
+      50% { opacity: 0.2; transform: translateY(-2px); }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 2s ease-in-out;
+      z-index: 1; /* above stars */
+      position: relative;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .box {
+      width: 300px;
+      height: 330px;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+      background-color: rgba(0,0,0,0.85); /* dark transparent box */
+      border-radius: 15px;
+      transform: perspective(1000px) rotateY(0deg);
+      box-shadow: 0 0 25px rgba(255, 0, 150, 0.8), 0 0 40px rgba(0, 255, 255, 0.5);
+      animation: floatBox 3s ease-in-out infinite;
+      margin-top: 20px;
+      color: #fff; /* white text */
+      z-index: 2;
+    }
+
+    @keyframes floatBox {
+      0%, 100% { transform: translateY(0) rotateY(0deg); box-shadow: 0 0 15px rgba(255,0,150,0.7); }
+      50% { transform: translateY(-10px) rotateY(5deg); box-shadow: 0 0 25px rgba(0,150,255,0.7); }
+    }
+
+    #text {
+      animation: textFade 2s ease-in-out;
+    }
+
+    @keyframes textFade {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .input-container {
+      display: flex;
+      background: linear-gradient(45deg, #333 0%, #555 100%);
+      border-radius: 1rem;
+      padding: 0.3rem;
+      gap: 0.3rem;
+      max-width: 300px;
+      width: 100%;
+      animation: glow 2s infinite alternate;
+      margin-top: 10px;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 5px #ff9d9d, 0 0 10px #8a2be2; }
+      to { box-shadow: 0 0 15px #32CD32, 0 0 30px #00ffff; }
+    }
+
+    .input-container input {
+      border-radius: 0.8rem 0 0 0.8rem;
+      background: #222;
+      width: 89%;
+      flex-basis: 75%;
+      padding: 1rem;
+      border: none;
+      border-left: 2px solid #ff9d9d;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .input-container input:focus {
+      border-left: 2px solid #32CD32;
+      outline: none;
+      box-shadow: inset 0 0 10px rgba(0,255,0,0.5);
+      animation: inputShine 1.5s infinite linear;
+    }
+
+    @keyframes inputShine {
+      from { background: #222; }
+      to { background: #444; }
+    }
+
+    .input-container button {
+      flex-basis: 25%;
+      padding: 1rem;
+      background: linear-gradient(135deg, #8a2be2 0%, #800080 100%);
+      font-weight: 900;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      color: white;
+      border: none;
+      width: 100%;
+      border-radius: 0 1rem 1rem 0;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+
+    .input-container button:hover {
+      background: linear-gradient(135deg, #A8E4A0 0%, #32CD32 100%);
+      color: red;
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 5px rgba(138,43,226,0.6); }
+      50% { transform: scale(1.05); box-shadow: 0 0 20px rgba(50,205,50,0.6); }
+      100% { transform: scale(1); box-shadow: 0 0 5px rgba(138,43,226,0.6); }
+    }
+
+    .centered-text {
+      text-align: center;
+      color: #fff;
+      animation: bounceIn 2s ease;
+    }
+
+    @keyframes bounceIn {
+      0% { opacity: 0; transform: scale(0.5); }
+      60% { opacity: 1; transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+  
+    .top-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 0 20px rgba(255,255,255,0.9), 0 0 40px rgba(0,255,255,0.6);
+      animation: floatImg 4s ease-in-out infinite, rotateImg 8s linear infinite;
+      margin-bottom: 15px;
+    }
+
+    @keyframes floatImg {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes rotateImg {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 500px) {
+      .input-container {
+        flex-direction: column;
+      }
+      .input-container input {
+        border-radius: 0.8rem;
+      }
+      .input-container button {
+        padding: 1rem;
+        border-radius: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <script>
+    const starCount = 100;
+    for(let i=0;i<starCount;i++){
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random()*100 + 'vh';
+      star.style.left = Math.random()*100 + 'vw';
+      star.style.width = Math.random()*2+1 + 'px';
+      star.style.height = star.style.width;
+      star.style.animationDuration = 2 + Math.random()*3 + 's';
+      document.body.appendChild(star);
+    }
+  </script>
+
+  <div class="container">
+    <div class="top-img-container">
+      <img src="https://files.catbox.moe/cpu3eu.jpg" alt="Top Image" class="top-img">
+    </div>
+
+    <div class="box" id="box">
+      <div id="text">
+        <i class="fa fa-user"></i>
+        <h3 class="centered-text">Link with phone number</h3>
+        <h6>⚙Enter your number with country code.⚙</h6>
+        <div class="input-container">
+          <input placeholder="+94727319036" type="number" id="number">
+          <button id="submit">Enter</button>
+        </div>
+        <a id="waiting-message" class="centered-text" style="display: none;">in process...</a>
+        <main id="pair"></main>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+  <script>
+    let a = document.getElementById("pair");
+    let b = document.getElementById("submit");
+    let c = document.getElementById("number");
+
+    async function Copy() {
+      let text = document.getElementById("copy").innerText;
+      let obj = document.getElementById("copy");
+      await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
+      obj.innerText = "COPIED";
+      obj.style = "color:blue;font-weight:bold";
+      setTimeout(() => {
+        obj.innerText = text;
+        obj.style = "color:red;font-weight:bold";
+      }, 500);
+    }
+
+    b.addEventListener("click", async (e) => {
+      e.preventDefault();
+      if (!c.value) {
+        a.innerHTML = '<a style="color:red;font-weight:bold">❗Enter your whatsapp number with country code.</a><br><br>';
+      } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
+        a.innerHTML = '<a style="color:red;font-weight:bold">🚫 Invalid number format</a><br><br>';
+      } else {
+        const bc = c.value.replace(/[^0-9]/g, "");
+        let bb = "";
+        let bbc = "";
+        const cc = bc.split('');
+        cc.map(a => {
+          bbc += a;
+          if (bbc.length == 3) {
+            bb += " " + a;
+          } else if (bbc.length == 8) {
+            bb += " " + a;
+          } else {
+            bb += a;
+          }
+        });
+        c.type = "text";
+        c.value = "+" + bb;
+        c.style = "color:black;font-size:20px";
+        a.innerHTML = '<a style="color:red;font-weight:bold">Please wait 🔖 </a><br><br>';
+        try {
+          let { data } = await axios(`/code?number=${bc}`);
+          let code = data.code || "Service Unavailable";
+          a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold;cursor:pointer" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
+        } catch(err) {
+          a.innerHTML = '<a style="color:red;font-weight:bold">❌ Service Unavailable</a><br><br>';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
